@@ -1,0 +1,45 @@
+1. Actual: Positive - Classified: Positive
+2. Actual: Positive - Classified: Positive
+3. Actual: Positive - Classified: Positive
+4. Actual: Positive - Classified: Negative
+5. Actual: Positive - Classified: Negative
+6. Actual: Positive - Classified: Positive
+7. Actual: Positive - Classified: Positive
+8. Actual: Positive - Classified: Positive
+9. Actual: Positive - Classified: Positive
+10. Actual: Positive - Classified: Positive
+11. Actual: Positive - Classified: Negative
+12. Actual: Positive - Classified: Negative
+13. Actual: Positive - Classified: Positive
+14. Actual: Positive - Classified: Positive
+15. Actual: Positive - Classified: Positive
+16. Actual: Positive - Classified: Positive
+17. Actual: Positive - Classified: Negative
+18. Actual: Positive - Classified: Positive
+19. Actual: Negative - Classified: Negative
+20. Actual: Negative - Classified: Negative
+21. Actual: Negative - Classified: Negative
+22. Actual: Negative - Classified: Negative
+23. Actual: Negative - Classified: Negative
+24. Actual: Negative - Classified: Negative
+25. Actual: Negative - Classified: Negative
+26. Actual: Negative - Classified: Negative
+27. Actual: Negative - Classified: Negative
+28. Actual: Negative - Classified: Negative
+29. Actual: Negative - Classified: Negative
+30. Actual: Negative - Classified: Negative
+31. Actual: Negative - Classified: Negative
+32. Actual: Negative - Classified: Negative
+33. Actual: Negative - Classified: Negative
+34. Actual: Negative - Classified: Negative
+35. Actual: Negative - Classified: Negative
+36. Actual: Negative - Classified: Negative
+37. Actual: Negative - Classified: Negative
+38. Actual: Negative - Classified: Negative
+39. Actual: Negative - Classified: Negative
+40. Actual: Negative - Classified: Negative
+41. Actual: Negative - Classified: Positive
+42. Actual: Negative - Classified: Negative
+Correctly Classified:	0.857
+Precision:	0.929
+Recall: 	0.722

@@ -1,0 +1,106 @@
+/*******************************************************************************
+File:             Questions.txt
+
+Author:           Yi Xian Soo <ysoo>
+
+Completion Date:  4/17/2016
+
+Course:           CS 367, Spring 2016
+*******************************************************************************/
+Directions: answer the following six (6) questions. 
+
+1) Before running your program, what is the worst complexity of building tree for 
+ArrayList, Binary Search Tree, Binary Search Tree with a small positive
+rebalance factor(e.g 2) and RBTree?
+
+Answer: Worst complexity of building tree for ArrayList is O(N), Binary Search Tree
+has a worst complexity of O(N log N), Binary Search Tree with small positive
+rebalance factor has a worst complexity of O(N^2 log N), and a RBTree has a worst 
+complexity of O(N log N).
+
+2) Before running your program, what is the worst complexity of contains search for 
+ArrayList, Binary Search Tree, Binary Search Tree with a small positive
+rebalance factor(e.g 2) and RBTree?
+
+Answer: Worst complexity of contains search for ArrayList is O(N^2), Binary Search Tree
+has a worst complexity of O(N^2), Binary Search Tree with a small positive rebalance 
+factor has a worst complexity of O(N log N), and a RBTree has a worst complexity of 
+O(N log N).
+
+3) Before running your program, what is the worst complexity of range search for 
+ArrayList, Binary Search Tree, Binary Search Tree with a small positive
+rebalance factor(e.g 2) and RBTree? Assume the range is small. Assume the result of
+range search contains K elements.
+
+Answer:Worst complexity of range search for ArrayList is O(K*N^2), Binary Search Tree
+has a worst complexity of O(K*N^2), Binary Search Tree with a small positive rebalance 
+factor has a worst complexity of O(K*N log N), and a RBTree has a worst complexity of 
+O(K*N log N).
+
+For questions 4 - 6, you should use the Evaluator program as written.
+
+4) In this question you will run the program using the parameters 
+indicated below:
+
+random_1000.txt 10 2 3
+
+a)For random data, what are the rankings (from fastest to slowest) for the four 
+data structures based on the mean time of building a tree, contains search, and range
+search? 
+b)What about for the sorted data?
+
+Answer: 
+a) Building a tree : ArrayListSet, RBTreeSet, BSTreeSet, BSTreeBset
+Contains Search: BSTreeBSet, BSTreeSet, RBTreeSet, ArrayListSet
+Range Search: RBTreeSet, BSTreeBSet, BSTreeSet, ArrayListSet
+
+b) Building a tree: ArrayListSet, RBTreeSet, BSTreeSet, BSTreeBSet
+Contains Search: RBTreeSet, BSTreeBSet, ArrayListSet, BSTreeSet
+Range Search: RBTreeSet, ArrayListSet, BSTreeBSet, BSTreeSet
+
+5) In this question you will run the program using the parameters 
+indicated below:
+
+random_10000.txt 10 2 3
+
+a)Does the ranking change for the larger data set on random data and sorted data? 
+b)Which data structure has the largest growth rate function? Explain your answers in terms
+of building tree, contains search and range search for random data and sorted data.
+
+Answer: a) Yes, the ranking changed a little
+Random Data Results:
+Build Tree: Ranking remains the same
+Contains Search: BSTreeBSet, RBTreeSet, BSTreeSet, ArrayListSet
+Range Search: RBTreeSet, BSTreeBSet, ArrayListSet, BSTreeSet
+
+Sorted Data Results: 
+Build Tree: Ranking remains the same
+Contains Search: BSTreeBSet, RBTreeSet, BSTreeSet, ArrayListSet
+Range Search: RBTreeSet, BSTreeBSet, ArrayListSet, BSTreeSet
+
+b) For tree building, BSTreeBSet has the largest growth rate function for both random and
+sorted data. This is because the tree needs to be rebalanced often causing it to have a 
+large time complexity. 
+For Contains Search, ArrayList has the largest growth rate function for random data as
+it needs to linearly go through the list every time. For sorted data however, the BSTreeSet
+has the largest growth rate function as it has to linearly go through its subtrees, which has 
+a large height has the data is sorted.
+For Range Search, BSTreeSet has the largest growth rate function for both random and sorted
+data. This is due to the same reason as contains search, it takes a long time to go through the
+subtrees of the BSTreeSet, which has a large height as it is not balanced.
+
+6) In this question you will run the program using the parameters 
+indicated below:
+
+random_1000.txt 10 2 3
+random_1000.txt 10 5 3
+random_1000.txt 10 10 3
+
+Briefly explain how the rebalanceThreshold effects the time for building tree, contains search 
+and range search.
+
+Answer: The significant difference from changing the rebalanceThreshold is in the times of 
+BSTreeBSet. The time to build a tree has decreased with the increase of the rebalanceThreshold
+for both random and sorted data. The time taken to do a contains search and a range search does not
+differ much. This is because as the rebalanceThreshold increases, rebalancing is not done as often, 
+decreasing the build tree times. 
